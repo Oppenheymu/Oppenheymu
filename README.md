@@ -3,12 +3,14 @@
     <a href="https://github.com/Oppenheymu"><img src="https://komarev.com/ghpvc/?username=Oppenheymu&label=Profile+Views" alt="Profile Views" title="Profile Views" /></a>
 </p>
 
-<!-- 动态统计卡片区 -->
+<!-- GitHub 综合数据卡片 -->
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Oppenheymu&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
 </p>
+
+<!-- 拉宽的居中语言统计卡片 -->
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Oppenheymu&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
+  <img width="800" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Oppenheymu&layout=compact&theme=dark&hide_border=true&hide=html,css" alt="Top Languages" />
 </p>
 
 <!-- 动态活跃曲线 -->
