@@ -8,11 +8,6 @@
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Oppenheymu&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
 </p>
 
-<!-- 拉宽的居中语言统计卡片 -->
-<p align="center">
-  <img width="800" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Oppenheymu&layout=compact&theme=dark&hide_border=true&hide=html,css" alt="Top Languages" />
-</p>
-
 <!-- 动态活跃曲线 -->
 <p align="center">
     <img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=Oppenheymu&theme=github-compact&hide_border=true&area=true&custom_title=Activity%20Graph" alt="Activity Graph" title="Activity Graph" />
