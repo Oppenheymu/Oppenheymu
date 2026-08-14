@@ -3,11 +3,6 @@
     <a href="https://github.com/Oppenheymu"><img src="https://komarev.com/ghpvc/?username=Oppenheymu&label=Profile+Views" alt="Profile Views" title="Profile Views" /></a>
 </p>
 
-<!-- GitHub 综合数据卡片 -->
-<p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Oppenheymu&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
-</p>
-
 <!-- 动态活跃曲线 -->
 <p align="center">
     <img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=Oppenheymu&theme=github-compact&hide_border=true&area=true&custom_title=Activity%20Graph" alt="Activity Graph" title="Activity Graph" />
