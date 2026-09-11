@@ -1,5 +1,9 @@
+<!-- 技术栈徽章 -->
 <p align="center">
-    <a href="https://github.com/Oppenheymu"><img src="https://komarev.com/ghpvc/?username=Oppenheymu&label=Profile+Views" alt="Profile Views" title="Profile Views" /></a>
+    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" title="TypeScript" />
+    <img src="https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" title="Node.js" />
+    <img src="https://img.shields.io/badge/-Koishi-5546A3?style=flat-square" alt="Koishi" title="Koishi" />
+    <img src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" title="Rust" />
 </p>
 
 <!-- 3D 城市立体贡献图（北半球四季配色，静态无动画；跟随浏览者明暗模式自动切换背景） -->
