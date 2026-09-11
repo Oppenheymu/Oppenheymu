@@ -1,0 +1,78 @@
+[
+    {
+        "type": "season",
+        "fileName": "profile-season-light.svg",
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#00000f",
+        "strongColor": "#111133",
+        "weakColor": "gray",
+        "radarColor": "#47a042",
+        "growingAnimation": false,
+        "contribColors1": [
+            "#efefef",
+            "#ffe7ff",
+            "#edaeda",
+            "#e492ca",
+            "#ba7aad"
+        ],
+        "contribColors2": [
+            "#efefef",
+            "#d8e887",
+            "#8cc569",
+            "#47a042",
+            "#1d6a23"
+        ],
+        "contribColors3": [
+            "#efefef",
+            "#ffed4a",
+            "#ffc402",
+            "#fe9400",
+            "#fa6100"
+        ],
+        "contribColors4": [
+            "#efefef",
+            "#999999",
+            "#cccccc",
+            "#dddddd",
+            "#eeeeee"
+        ]
+    },
+    {
+        "type": "season",
+        "fileName": "profile-season-dark.svg",
+        "backgroundColor": "#0d1117",
+        "foregroundColor": "#c9d1d9",
+        "strongColor": "#ffc837",
+        "weakColor": "#8b949e",
+        "radarColor": "#47a042",
+        "growingAnimation": false,
+        "contribColors1": [
+            "#21262d",
+            "#5c2f4f",
+            "#8a3f70",
+            "#b8558f",
+            "#e08cba"
+        ],
+        "contribColors2": [
+            "#21262d",
+            "#1b7d28",
+            "#24a736",
+            "#2dd143",
+            "#57da69"
+        ],
+        "contribColors3": [
+            "#21262d",
+            "#7a5200",
+            "#b57900",
+            "#e69a00",
+            "#ffc837"
+        ],
+        "contribColors4": [
+            "#21262d",
+            "#3d444d",
+            "#57606a",
+            "#768390",
+            "#adbac7"
+        ]
+    }
+]

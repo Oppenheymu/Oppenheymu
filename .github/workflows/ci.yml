@@ -35,12 +35,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 第二步：生成 3D 城市立体贡献图（默认生成北半球四季、南半球、经典绿、暗黑等全套版本）
+      # 第二步：生成 3D 城市立体贡献图
+      # 使用自定义配置：北半球四季配色 + 强制静态（关闭 growingAnimation）+ 明暗双版本
       - name: 生成 3D 城市立体贡献图
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: Oppenheymu
+          SETTING_JSON: .github/assets/profile-3d-contrib.json
 
       # 第三步：将生成的 3D 资源合并移动到 dist 目录中，便于统一发布
       - name: 整合所有 SVG 文件至 dist 目录
