@@ -3,8 +3,8 @@
 
 <!-- 技术栈徽章 -->
 <p align="center">
-    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" title="TypeScript" />&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" title="Node.js" />&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" title="TypeScript" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" title="Node.js" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/-Koishi-5546A3?style=flat-square&logo=npm&logoColor=white" alt="Koishi" title="Koishi" />
 </p>
 
