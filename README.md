@@ -12,7 +12,11 @@
     </picture>
 </div>
 
-<!-- 贪吃蛇动画（加了随机/时间戳参数打破缓存） -->
-<p align="center">
-    <img width="800" src="https://raw.githubusercontent.com/Oppenheymu/Oppenheymu/output/github-contribution-grid-snake-dark.svg?v=1" alt="Snake" title="Snake" />
-</p>
+<!-- 贪吃蛇动画（跟随浏览者明暗模式自动切换；?v=1 用于打破缓存） -->
+<div align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Oppenheymu/Oppenheymu/output/github-contribution-grid-snake-dark.svg?v=1" />
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Oppenheymu/Oppenheymu/output/github-contribution-grid-snake.svg?v=1" />
+        <img width="800" src="https://raw.githubusercontent.com/Oppenheymu/Oppenheymu/output/github-contribution-grid-snake.svg?v=1" alt="Snake" title="Snake" />
+    </picture>
+</div>
