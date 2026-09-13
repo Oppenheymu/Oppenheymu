@@ -29,9 +29,11 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Oppenheymu
+          # color_dots 共 5 个颜色，依次对应：0 次贡献、以及从低到高的 4 个贡献档位。
+          # 这里把最低的可视档整体加深/提亮，避免某天贡献爆量后其余格子显得过于暗淡。
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#24292e&color_dots=#ebedf0,#40c463,#2ea043,#1f883d,#0e4429
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#e6edf3&color_dots=#161b22,#1f6f34,#2ea043,#3fb950,#56d364
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
