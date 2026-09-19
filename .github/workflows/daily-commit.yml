@@ -1,0 +1,60 @@
+# 工作流名称：每日自动提交（防止绿墙缺卡）
+# 作用：每天定时在 main 分支产生一次真实提交，并把提交者身份设置为你本人，
+#       从而在 GitHub 贡献图（绿墙）上留下当天的记录。
+name: 每日自动提交（保绿墙）
+
+on:
+  # 定时触发：每天 UTC 22:00（北京时间次日 06:00）执行
+  # 故意排在 ci.yml（UTC 00:00）之前，这样当天提交能被随后生成的贪吃蛇/3D 图统计到
+  schedule:
+    - cron: "0 22 * * *"
+  # 手动触发：支持在 Actions 页面手动点击运行（补卡用）
+  workflow_dispatch:
+
+# 需要写权限才能把提交推回仓库
+permissions:
+  contents: write
+
+# 串行化：避免与其它运行同时推送造成冲突
+concurrency:
+  group: daily-commit
+  cancel-in-progress: false
+
+jobs:
+  daily-commit:
+    name: 生成每日保活提交
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          # 需要完整历史，保证后面的 pull --rebase 正常工作
+          fetch-depth: 0
+
+      # 第一步：写入一条带当日时间戳的记录（内容必须每天变化，否则不会产生提交）
+      - name: 记录当日时间戳
+        run: |
+          mkdir -p .github/daily
+          printf '%s\n' "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> .github/daily/commits.log
+
+      # 第二步：以你本人的身份提交并推送到 main
+      - name: 以本人身份提交并推送
+        run: |
+          git config user.name "Oppenheymu"
+          git config user.email "oppenheymu@gmail.com"
+
+          git add -A
+
+          # 若确实没有改动则直接退出，避免空提交报错
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+            exit 0
+          fi
+
+          git commit -m "chore(daily): 每日自动提交 $(date -u '+%Y-%m-%d')"
+
+          # 保险起见，推送前先同步一次远程，避免并发导致的 non-fast-forward
+          git pull --rebase --autostash origin main
+          git push origin main
