@@ -8,7 +8,9 @@
     <img src="https://img.shields.io/badge/-Koishi-5546A3?style=flat-square&logo=npm&logoColor=white" alt="Koishi" title="Koishi" />
 </p>
 
-
+<p align="center">
+    <sub>好累喔，维护好多项目。希望有人来协作</sub>
+</p>
 
 <!-- 3D 城市立体贡献图（北半球四季配色，静态无动画；跟随浏览者明暗模式自动切换背景） -->
 <div align="center">
